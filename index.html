@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresso Viajante</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <img src="assets/img/Expresso viajante.png" alt="Logotipo da empresa Expresso viajante" id="logo">
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html" title="Menu Inicial">Início</a></li>
+                <li><a href="#viagens" title="Conheça nossos destinos">Viagens</a></li>
+                <li><a href="#perguntas" title="Perguntas mais frequentes de usuários">Perguntas frequentes</a></li>
+                <li><a href="#sobre" title="Um pouco sobre nossa empresa">Sobre Nós</a></li>
+                <li><a href="#contato" title="Canais de contato">Contato</a></li>
+                <li><a href="login.html" target="_self" title="Faça login em nossa página">Login</a></li>
+                <li><a href="cadastro.html" target="_self" title="Clique e faça seu cadastro">Cadastre-se</a></li>
+                <li><a href="carrinho.html" target="_self" title="Seu carrinho de compras">Carrinho</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+    </header>
+    <main>
+
+        <section id="video">
+            <video src="assets/img/Videocapa.mp4" autoplay muted loop playsinline
+                style="width: 100%; height: auto; max-height: 100vh; object-fit: cover;">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+            <blockquote>Venha Ser Feliz Viajando Conosco.</blockquote>
+        </section>
+
+        <section id="viagens">
+            <h2>TODAS AS VIAGENS</h2>
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/BonitoMS.jpeg" alt="Paisagem de Bonito, MS, com águas cristalinas"
+                        title="Foto: Bonito - MS">
+                    <figcaption>Destino paradisíaco com águas cristalinas e natureza exuberante.</figcaption>
+                </figure>
+                <div>
+                    <p>Bate-volta</p>
+                    <h3>Bonito - MS | Bate e Volta</h3>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="window.location.href='bonito.html'"
+                        aria-label="Ver detalhes da viagem para Bonito - MS">Ver detalhes</button>
+                </div>
+            </article>
+
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/CamposdojordaoSP.jpeg"
+                        alt="Vista das montanhas e arquitetura europeia em Campos do Jordão, SP"
+                        title="Foto: Campos do Jordão - SP">
+                    <figcaption>A Suíça brasileira, com clima frio, arquitetura encantadora e paisagens de tirar o
+                        fôlego.</figcaption>
+                </figure>
+                <div>
+                    <p>Bate-volta</p>
+                    <h3>Campos do Jordão | Bate Volta</h3>
+                    <p class="preco">R$ 249,00</p>
+                    <button onclick="window.location.href='camposjordao.html'"
+                        aria-label="Ver detalhes da viagem para Campos do Jordão">Ver detalhes</button>
+                </div>
+            </article>
+
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/CapitolioMG.jpeg"
+                        alt="Lago de águas cristalinas rodeado por cânions em Capitólio, MG"
+                        title="Foto: Capitólio - MG">
+                    <figcaption> Explore cânions imponentes e lagoas cristalinas em um dos destinos mais incríveis de
+                        Minas Gerais.</figcaption>
+                </figure>
+                <div>
+                    <p>Bate-volta</p>
+                    <h3>Capitólio - MG | Bate e Volta</h3>
+                    <p class="preco">R$ 189,00</p>
+                    <button onclick="window.location.href='capitolio.html'"
+                        aria-label="Ver detalhes da viagem para Capitólio-MG">Ver detalhes</button>
+                </div>
+            </article>
+
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/IlhabelaSP.jpeg"
+                        alt="Praia com águas azuis e natureza preservada em Ilhabela, SP" title="Foto: Ilhabela - SP">
+                    <figcaption>Paraíso tropical com praias deslumbrantes, cachoeiras escondidas e natureza exuberante.
+                    </figcaption>
+                </figure>
+                <div>
+                    <p>Bate-volta</p>
+                    <h3>Ilhabela - SP | Bate e Volta</h3>
+                    <p class="preco">R$ 279,00</p>
+                    <button onclick="window.location.href='ilhabela.html'"
+                        aria-label="Ver detalhes da viagem para ilhabela">Ver detalhes</button>
+                </div>
+            </article>
+
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/LavrinhasSP.jpeg"
+                        alt="Rio de águas cristalinas cercado por vegetação em Lavrinhas, SP"
+                        title="Foto: Lavrinhas - SP">
+                    <figcaption>Refúgio natural com rios cristalinos e trilhas perfeitas para quem busca aventura e
+                        tranquilidade.</figcaption>
+                </figure>
+                <div>
+                    <p>Bate-volta</p>
+                    <h3>Lavrinhas - SP | Bate e Volta</h3>
+                    <p class="preco">R$ 179,00</p>
+                    <button onclick="window.location.href='lavrinhas.html'"
+                        aria-label="Ver detalhes da viagem para Lavrinhas">Ver detalhes</button>
+                </div>
+            </article>
+
+            <article class="viagens-card">
+                <figure>
+                    <img src="assets/img/TrindadeRJ.jpg" alt="Praia paradisíaca com mar azul e falésias em Trindade, RJ"
+                        title="Foto: Trindade - RJ">
+                    <figcaption>Praia paradisíaca com mar azul, piscinas naturais e uma vibe única para relaxar.
+                    </figcaption>
+                </figure>
+                <div>
+                    <p>Hospedagem</p>
+                    <h3>Trindade - RJ | Com Hospedagem</h3>
+                    <p class="preco">R$ 499,00</p>
+                    <button title="Desculpe, passagens esgotadas." disabled>ESGOTADO</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="perguntas">
+            <h2>PERGUNTAS FREQUENTES</h2>
+            <details>
+                <summary><strong>Criança paga?</strong></summary>
+                <p>Crianças de até 5 anos viajando no colo não pagam. A partir de 6 anos, pagam o valor normal pois é
+                    obrigatório ocupar um assento.</p>
+            </details>
+
+            <details>
+                <summary><strong>Onde é o embarque?</strong></summary>
+                <p>Nossos embarques ocorrem em Itaquera, Barra Funda, e Santo Amaro. Consulte a página da viagem para
+                    detalhes.</p>
+            </details>
+
+            <details>
+                <summary><strong>Qual a forma de pagamento?</strong></summary>
+                <p>Aceitamos pagamento via PIX, transferência bancária, cartão de débito e crédito em até 12x com juros.
+                </p>
+            </details>
+
+            <details>
+                <summary><strong>Como funcionam as viagens?</strong></summary>
+                <p>Trabalhamos com transporte fretado para destinos turísticos. Temos pacotes bate-volta e com
+                    hospedagem para feriados e fins de semana.</p>
+            </details>
+        </section>
+
+        <section id="sobre">
+            <h2>SOBRE NÓS</h2>
+            <div class="sobre-a-empresa">
+                <figure>
+                    <img src="assets/img/pessoasviajando.jpg" alt="Grupo de passageiros felizes dentro de um ônibus"
+                        title="Foto: Passageiros viajando em nosso onibus">
+                </figure>
+                <div class="sobre-nos-descricao">
+                    <h3>Embarque Conosco</h3>
+                    <p>A Expresso Viajante nasceu da paixão por explorar o mundo e proporcionar experiências
+                        inesquecíveis. Somos uma agência de turismo comprometida em transformar cada viagem em uma
+                        jornada única, com roteiros cuidadosamente planejados para atender a todos os perfis de
+                        viajantes.</p>
+                    <p>Com uma equipe especializada e parceria com os melhores fornecedores, garantimos conforto,
+                        segurança e momentos memoráveis. Seja para uma aventura radical, um descanso em praias
+                        paradisíacas ou uma imersão cultural, estamos aqui para tornar seus sonhos realidade</p>
+                    <p>Nosso compromisso: qualidade, transparência e um atendimento que faz a diferença.</p>
+                    <p>Nosso objetivo: levar você ao destino perfeito, sem preocupações.</p>
+                    <p>Viaje com a gente e descubra o mundo de uma forma única!</p>
+                    <blockquote><i>"Viajar é colecionar momentos, e a Expresso Viajante está aqui para tornar cada um
+                            deles inesquecível!"</i></blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>CONTATO</h2>
+            <div class="contato-da-empresa">
+                <h3>Canais de atendimento</h3>
+                <p>(11)93131-5263</p>
+                <p>expressoviajante@outlook.com</p>
+            </div>
+            <div class="formulario-usuario">
+                <h3>Envie um e-mail</h3>
+                <form name="usuario" method="post" target="_blank" autocomplete="on" action="#"
+                    onsubmit="alert('Formulário enviado com sucesso');">
+                    <label>Nome: </label>
+                    <input type="text" name="nome" placeholder="Nome" required><br>
+                    <label>Email: </label>
+                    <input type="email" placeholder="Email" required><br>
+                    <label>Mensagem: </label><br>
+                    <textarea aria-describedby="ajuda-mensagem" placeholder="Mensagem" minlength="10"
+                        maxlength="1000"></textarea><br>
+                    <label></label><button type="submit">Enviar</button><br>
+                </form>
+            </div>
+        </section>
+        
+        <aside>
+            <div id="redes">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><a href="linkedIn" target="_blank">LinkedIn</a></li>
+                    <li><a href="instagran" target="_blank">Instagram</a></li>
+                    <li><a href="Facebook" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+    </main>
+    <footer>
+
+        <span>
+            <p>Todos os direitos reservados &copy; 2025 Expresso Viajante </p>
+        </span>
+
+    </footer>
+</body>
+
+</html>
