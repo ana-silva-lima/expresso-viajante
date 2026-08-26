@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Expresso Viajante</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="assets/img/Expresso viajante.png" alt="Logotipo da empresa Expresso Viajante" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Menu Inicial">Início</a></li>
+                <li><a href="login.html" title="Faça login em nossa página">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="carrinho.html" title="Seu carrinho de compras">Carrinho</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+    </header>
+    <main>
+
+        <section id="cadastro">
+            <h1>FAÇA SEU CADASTRO</h1>
+            <form name="cadastro-usuario" method="post" autocomplete="on" action="#">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required><br>
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="100" required><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" title="11 dígitos (DDD + número)"
+                        placeholder="(00) 00000-0000" required><br>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro" required><br>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" title="CEP no formato 00000-000" placeholder="00000-000"
+                        required><br>
+
+                    <label>Sexo:</label>
+                    <input type="radio" id="feminino" name="sexo" value="Feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required><br>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" minlength="6"
+                        required><br>
+
+                    <label for="repetir-senha">Repetir Senha:</label>
+                    <input type="password" id="repetir-senha" name="repetir-senha" placeholder="Digite novamente"
+                        required><br>
+                </fieldset>
+
+                <label for="manter-logado">Manter conectado?</label>
+                <select id="manter-logado" name="manter-logado">
+                    <option value="nao">NÃO</option>
+                    <option value="sim">SIM</option>
+                </select>
+
+                <div class="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os <a href="termos.html" target="_blank">Termos de Uso</a></label>
+                </div>
+
+                <hr>
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+        <span>
+            <p>Todos os direitos reservados &copy; 2025 Expresso Viajante</p>
+        </span>
+        
+    </footer>
+</body>
+
+</html>
