@@ -1,0 +1,285 @@
+/*CONFIGURAÇÕES GERAIS*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1f3c5b;
+}
+
+section {
+    padding: 50px 8%;
+}
+
+
+/*CABEÇALHO*/
+
+header {
+    background-color: white;
+    padding: 15px 8%;
+}
+
+#logo {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1f6fa8;
+}
+
+
+/*VÍDEO PRINCIPAL*/
+
+#video {
+    padding: 0;
+    position: relative;
+}
+
+#video video {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+#video blockquote {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f3c5b;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+/*CARDS DE VIAGENS*/
+
+#viagens {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.viagens-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.viagens-card figure {
+    margin: 0;
+    width: 45%;
+}
+
+.viagens-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.viagens-card figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.viagens-card > div {
+    flex: 1;
+}
+
+.viagens-card h3 {
+    margin-top: 5px;
+}
+
+.preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1f6fa8;
+}
+
+
+/*BOTÕES*/
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f6fa8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174f78;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+/*PERGUNTAS FREQUENTES*/
+
+#perguntas {
+    max-width: 900px;
+    margin: auto;
+}
+
+details {
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+
+/*SOBRE NÓS*/
+
+.sobre-a-empresa {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobre-a-empresa figure {
+    margin: 0;
+    width: 45%;
+}
+
+.sobre-a-empresa img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sobre-nos-descricao {
+    flex: 1;
+}
+
+
+/*CONTATO*/
+
+#contato {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contato-da-empresa,
+.formulario-usuario {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/*REDES SOCIAIS*/
+
+#redes {
+    text-align: center;
+    padding: 25px;
+}
+
+#redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#redes li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#redes a {
+    color: #1f6fa8;
+}
+
+
+/*RODAPÉ*/
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f3c5b;
+    color: white;
+}
+
+
+/*CELULAR*/
+
+@media (max-width: 768px) {
+
+    .viagens-card,
+    .sobre-a-empresa {
+        flex-direction: column;
+    }
+
+    .viagens-card figure,
+    .sobre-a-empresa figure {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}

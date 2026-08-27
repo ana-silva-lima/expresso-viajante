@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: white;
+    padding: 15px 8%;
+}
+
+#logo {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1f6fa8;
+}
+
+/* Conteúdo */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1f3c5b;
+}
+
+h2,
+h3 {
+    color: #1f3c5b;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagens */
+
+figure {
+    margin: 20px 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Listas */
+
+section ul {
+    padding-left: 22px;
+}
+
+/* Perguntas e regras */
+
+details {
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+/* Formulários e seleções */
+
+select,
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+select {
+    width: 100%;
+    max-width: 650px;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f6fa8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174f78;
+}
+
+/* Rodapé */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f3c5b;
+    color: white;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    main {
+        padding: 25px 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    figure img {
+        height: 230px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}

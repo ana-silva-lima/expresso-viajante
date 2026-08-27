@@ -51,14 +51,16 @@ Principais elementos da estrutura:
 
 ## Aprendizados
 
-Durante o desenvolvimento deste projeto, pratiquei principalmente:
+Durante o desenvolvimento e aprimoramento deste projeto, pratiquei principalmente:
 
 - Estruturação de páginas com HTML;
-- Organização e estilização com CSS;
-- Criação de formulários;
+- Organização e estilização de interfaces com CSS;
+- Criação e estilização de formulários;
 - Navegação entre diferentes páginas;
 - Uso de elementos semânticos;
 - Aplicação de conceitos básicos de acessibilidade;
+- Organização de layouts utilizando Flexbox;
+- Aplicação de responsividade básica com Media Queries;
 - Organização de arquivos em um projeto web.
 
 ## Status do projeto
